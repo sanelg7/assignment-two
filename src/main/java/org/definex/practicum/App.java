@@ -43,13 +43,13 @@ public class App
         System.out.println();
         System.out.println("Vendor login: " + vendorUser.getLogin());
         System.out.println("Vendor pass: " + vendorUser.getPassword());
-        System.out.println("Vendor name: " + vendorUser.getVendorName());
-        System.out.println("Vendor sector: " + vendorUser.getSector());
+        System.out.println("Vendor name: " + ((Vendor) vendorUser).getVendorName());
+
 
 
         // Testing overridden toString() methods
-        System.out.println(customerUser.toString());
-        System.out.println(vendorUser.toString());
+        /*System.out.println(customerUser.toString());
+        System.out.println(vendorUser.toString());*/
 
 
 

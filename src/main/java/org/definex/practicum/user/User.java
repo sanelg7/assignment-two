@@ -1,6 +1,6 @@
 package org.definex.practicum.user;
 
-public class User {
+public abstract class User {
 
     private static int userIdCounter = 0;
 
@@ -35,29 +35,5 @@ public class User {
         return userId;
     }
 
-    // Setter and getter methods for Customer subclass to override.
-    public void setFirstName(String firstName){}
-    public String getFirstName(){
-        return null;
-    }
-    public void setLastName(String lastName){}
-
-    public String getLastName(){
-        return null;
-    }
-
-    // Setter and getter methods for Vendor subclass to override.
-    public String getVendorName() {
-        return null;
-    }
-
-    public void setVendorName(String vendorName) {}
-
-    public String getSector() {
-        return null;
-    }
-    public void setSector(String sector) {}
-
-    // toString(). Should be overridden by both subclasses
 
 }
