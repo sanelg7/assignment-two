@@ -20,6 +20,7 @@ public class Customer extends User {
         this.lastName = lastName;
     }
 
+    // Overriding super get/set methods
     public String getFirstName() {
         return firstName;
     }
@@ -36,5 +37,13 @@ public class Customer extends User {
         this.lastName = lastName;
     }
 
-
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerId='" + super.getUserId() + '\'' +
+                ", login='" + super.getLogin() + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }

@@ -3,6 +3,7 @@ package org.definex.practicum;
 import org.definex.practicum.invoice.Invoice;
 import org.definex.practicum.user.Customer;
 import org.definex.practicum.user.User;
+import org.definex.practicum.user.Vendor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,14 +16,18 @@ public class App
 {
     public static void main( String[] args ) {
 
-        User user = new Customer(
-                "sanelege@gmail.com",
-                "test123");
-        User user2 = new Customer(
+
+        User customerUser = new Customer(
                 "sanelege@gmail.com",
                 "test123",
                 "Ege", "Sanel"
         );
+
+        User vendorUser = new Vendor(
+                "somevendor@vendorname.com",
+                "test123",
+                "definex",
+                "Software");
 
         List<Invoice> invoices = new ArrayList<>();
         for (int i= 0;i<3;i++) {
@@ -33,10 +38,21 @@ public class App
             System.out.println(i);
         }
 
-        System.out.println("User login: " + user.getLogin());
-        System.out.println("User pass: " + user.getPassword());
+        System.out.println("Customer login: " + customerUser.getLogin());
+        System.out.println("Customer pass: " + customerUser.getPassword());
+        System.out.println();
+        System.out.println("Vendor login: " + vendorUser.getLogin());
+        System.out.println("Vendor pass: " + vendorUser.getPassword());
+        System.out.println("Vendor name: " + vendorUser.getVendorName());
+        System.out.println("Vendor sector: " + vendorUser.getSector());
 
-        System.out.println("User id: " + user2.getFirstName());
+
+        // Testing overridden toString() methods
+        System.out.println(customerUser.toString());
+        System.out.println(vendorUser.toString());
+
+
+
 
 
 
