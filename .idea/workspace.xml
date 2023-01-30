@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c37928e1-8b06-4497-88bc-8622e1fa0c83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/Vendor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675027635144</updated>
-      <workItem from="1675027636213" duration="11252000" />
+      <workItem from="1675027636213" duration="11716000" />
     </task>
     <servers />
   </component>
