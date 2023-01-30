@@ -1,18 +1,24 @@
 package org.definex.practicum.user;
 
 
-import org.definex.practicum.invoice.Invoice;
-
-import java.util.List;
-
 public class Customer extends User {
+
 
     private String firstName;
     private String lastName;
 
-    private List<Invoice> invoices;
+    //
 
 
+    public Customer(String login, String password) {
+        super(login, password);
+    }
+
+    public Customer(String login, String password, String firstName, String lastName) {
+        super(login, password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -30,11 +36,5 @@ public class Customer extends User {
         this.lastName = lastName;
     }
 
-    public List<Invoice> getInvoices() {
-        return invoices;
-    }
 
-    public void setInvoices(List<Invoice> invoices) {
-        this.invoices = invoices;
-    }
 }
