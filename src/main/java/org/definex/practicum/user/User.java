@@ -8,6 +8,9 @@ public abstract class User {
     private String login;
     private String password;
 
+    public User() {
+    }
+
     public User(String login, String password) {
         this.login = login;
         this.password = password;
@@ -33,6 +36,11 @@ public abstract class User {
 
     public int getUserId() {
         return userId;
+    }
+
+    // Will hold uniqueness as there are no parameters.
+    public void setUserId() {
+        userId = userIdCounter++;
     }
 
 

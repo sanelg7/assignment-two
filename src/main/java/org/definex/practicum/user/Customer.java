@@ -1,23 +1,36 @@
 package org.definex.practicum.user;
 
 
+import java.time.LocalDateTime;
+
 public class Customer extends User {
 
 
+    LocalDateTime signUpDate;
     private String firstName;
     private String lastName;
 
-    //
-
-
-    public Customer(String login, String password) {
-        super(login, password);
+    public Customer() {
+        super();
     }
 
-    public Customer(String login, String password, String firstName, String lastName) {
-        super(login, password);
+    public Customer(LocalDateTime signupDate) {
+        super();
+    }
+
+
+    public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        signUpDate = LocalDateTime.now();
+        super.setUserId();
+    }
+
+    public Customer(String firstName, String lastName, LocalDateTime signUpDate) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.signUpDate = signUpDate;
+        super.setUserId();
     }
 
     // Overriding super get/set methods
@@ -37,11 +50,22 @@ public class Customer extends User {
         this.lastName = lastName;
     }
 
+    public LocalDateTime getSignUpDate() {
+        return signUpDate;
+    }
+
+    public void setSignUpDate(LocalDateTime signUpDate) {
+        this.signUpDate = signUpDate;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +
                 "customerId='" + super.getUserId() + '\'' +
-                ", login='" + super.getLogin() + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';

@@ -1,16 +1,20 @@
 package org.definex.practicum.product;
 
+import org.definex.practicum.user.Vendor;
+
 public class Product {
 
     private static int productIdCounter = 0;
-
     private int productId;
     private String name;
     private double price;
 
-    public Product(String name, double price) {
+    private Vendor vendor;
+
+    public Product(String name, double price, Vendor vendor) {
         this.name = name;
         this.price = price;
+        this.vendor = vendor;
 
         productId = productIdCounter++;
     }
@@ -33,6 +37,10 @@ public class Product {
 
     public int getProductId() {
         return productId;
+    }
+
+    public Vendor getVendor() {
+        return vendor;
     }
 
     @Override
