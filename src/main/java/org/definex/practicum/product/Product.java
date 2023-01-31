@@ -19,6 +19,7 @@ public class Product {
         productId = productIdCounter++;
     }
 
+    // Setters and getters
     public String getName() {
         return name;
     }

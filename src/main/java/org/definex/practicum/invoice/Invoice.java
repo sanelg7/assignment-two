@@ -13,7 +13,7 @@ public class Invoice {
     private static int invoiceIdCounter = 0;
     private int invoiceId;
     private LocalDateTime date;
-    private HashMap<Product, Integer> products;
+    private HashMap<Product, Integer> basket;
     private double totalPrice;
 
     private Customer customer;
@@ -26,13 +26,20 @@ public class Invoice {
 
     public Invoice(LocalDateTime date, HashMap<Product, Integer> products, Customer customer, Vendor vendor) {
         this.date = date;
-        this.products = products;
+        this.basket = products;
         this.customer = customer;
         this.vendor = vendor;
         invoiceId = invoiceIdCounter++;
         calculateTotalPrice();
 
     }
+
+    /* Setters and getters. Does not include setCustomer(), setVendor() as an
+    invoice can not be created by both parties, and they should not be overwritten.
+    Does not include setInvoiceId() as it could break logic.
+    Does not include totalPrice as it is derived from
+    basket<Product,Integer(product count) with a helper method.
+    */
 
     public int getInvoiceId() {
         return invoiceId;
@@ -50,12 +57,12 @@ public class Invoice {
         this.date = date;
     }
 
-    public HashMap<Product, Integer> getProducts() {
-        return products;
+    public HashMap<Product, Integer> getBasket() {
+        return basket;
     }
 
-    public void setProducts(HashMap<Product, Integer> products) {
-        this.products = products;
+    public void setBasket(HashMap<Product, Integer> basket) {
+        this.basket = basket;
     }
 
     public Customer getCustomer() {
@@ -69,8 +76,8 @@ public class Invoice {
     // Calculates total price as (Product Price * Lot Count)
     final void calculateTotalPrice() {
         totalPrice = 0;
-        for (Product p : products.keySet()) {
-            totalPrice += p.getPrice() * products.get(p);
+        for (Product p : basket.keySet()) {
+            totalPrice += p.getPrice() * basket.get(p);
         }
     }
 
@@ -80,7 +87,7 @@ public class Invoice {
         return "Invoice{" +
                 "invoiceId=" + invoiceId +
                 ", date=" + date +
-                ", products=" + products +
+                ", products=" + basket +
                 ", totalPrice=" + totalPrice +
                 ", customerId=" + customer.getUserId() +
                 ", vendorId=" + vendor.getUserId() +

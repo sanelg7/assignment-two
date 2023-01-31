@@ -13,7 +13,7 @@ public class ProductRepository {
     // Using the VendorRepository to fetch vendors and put them into products.
     private VendorRepository vendorRepository = new VendorRepository();
 
-    // Creating a list of hardcoded products for demonstration
+    // Creating data manually for demonstration purposes.
     public ProductRepository() {
         productList = new ArrayList<>();
         productList.add(new Product("Apple", 2.5, vendorRepository.getVendors().get(0)));

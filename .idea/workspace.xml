@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c37928e1-8b06-4497-88bc-8622e1fa0c83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/invoice/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/InvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/VendorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/repository/VendorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/service/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/service/InvoiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/definex/practicum/user/Vendor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +70,12 @@
       <recent name="org.definex.practicum.repository" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+      <command value="mvn package" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.definex.practicum.App" />
@@ -85,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675027635144</updated>
-      <workItem from="1675027636213" duration="31537000" />
+      <workItem from="1675027636213" duration="37517000" />
     </task>
     <servers />
   </component>

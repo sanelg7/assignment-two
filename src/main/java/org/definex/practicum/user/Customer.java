@@ -19,6 +19,8 @@ public class Customer extends User {
     }
 
 
+    // Sets supers userID to keep track of unique users
+
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -26,6 +28,12 @@ public class Customer extends User {
         super.setUserId();
     }
 
+    /*
+    Normally this constructor would not be needed.
+    But to demonstrate a required functionality (*signed up in June),
+    I had to create dummy data. This is for that specifically.
+    Also sets supers userID to keep track of unique users
+    */
     public Customer(String firstName, String lastName, LocalDateTime signUpDate) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -33,7 +41,8 @@ public class Customer extends User {
         super.setUserId();
     }
 
-    // Overriding super get/set methods
+    // Setters and getters
+
     public String getFirstName() {
         return firstName;
     }

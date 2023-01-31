@@ -6,12 +6,14 @@ public class Vendor extends User {
     private String sector;
 
 
+    // Sets supers userID to keep track of unique users
     public Vendor(String vendorName, String sector) {
         this.vendorName = vendorName;
         this.sector = sector;
+        super.setUserId();
     }
 
-
+    // Setters and getters
     public String getVendorName() {
         return vendorName;
     }
@@ -37,4 +39,6 @@ public class Vendor extends User {
                 ", sector='" + sector + '\'' +
                 '}';
     }
+
+
 }

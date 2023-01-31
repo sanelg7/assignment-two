@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 public class InvoiceService {
 
+    // Created an invoice repository instance to get saved invoices from.
     private InvoiceRepository invoiceRepository = new InvoiceRepository();
 
     // Returning all Invoices from repository.
@@ -38,7 +39,7 @@ public class InvoiceService {
         ).collect(Collectors.toList());
     }
 
-    // Get List of unique users within an Invoice List.
+    // Get a Set of unique users within an Invoice List.
     public Set<Customer> getUniqueCustomers(List<Invoice> invoices) {
         return invoices.stream()
                 .map(Invoice::getCustomer)

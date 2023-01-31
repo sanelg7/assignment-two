@@ -2,6 +2,7 @@ package org.definex.practicum.user;
 
 public abstract class User {
 
+    // To mimic AUTO_INCREMENT
     private static int userIdCounter = 0;
 
     private int userId;
@@ -17,6 +18,8 @@ public abstract class User {
 
         userId = userIdCounter++;
     }
+
+    // Setters and getters. Does not include setUserId as it would breake logic.
 
     public String getLogin() {
         return login;

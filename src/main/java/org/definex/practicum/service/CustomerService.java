@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 public class CustomerService {
 
+    // Created a customer repository instance to get saved customers from.
     private CustomerRepository customerRepository = new CustomerRepository();
 
     // Adding a customer to customer repository

@@ -10,6 +10,7 @@ public class CustomerRepository {
 
     private List<Customer> customers;
 
+    // Creating data manually for demonstration purposes.
     public CustomerRepository() {
         customers = new ArrayList<>();
         LocalDateTime now = LocalDateTime.now();

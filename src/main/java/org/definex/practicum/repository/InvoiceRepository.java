@@ -13,9 +13,12 @@ public class InvoiceRepository {
 
     private List<Invoice> invoices;
 
+    // Creating data manually for demonstration purposes.
     public InvoiceRepository() {
         invoices = new ArrayList<>();
         LocalDateTime localDateTime = LocalDateTime.now();
+
+        // Using the other repositories to populate Invoice objects.
         CustomerRepository customerRepository = new CustomerRepository();
         VendorRepository vendorRepository = new VendorRepository();
         List<Customer> customers = customerRepository.getCustomers();
@@ -43,7 +46,10 @@ public class InvoiceRepository {
         return invoices;
     }
 
-    // Helper method to create random  for each invoice.
+    /* Helper method to create random basket for each invoice. It returns a Map of Products and their count
+    ex:
+    3 Bananas and 4 Apples make a basket
+    */
     private HashMap<Product, Integer> createInvoiceDetail() {
         ProductRepository productRepository = new ProductRepository();
         Random random = new Random();

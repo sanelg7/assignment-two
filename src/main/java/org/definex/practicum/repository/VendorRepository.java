@@ -10,7 +10,7 @@ public class VendorRepository {
     // Creating a set of vendors.
     private List<Vendor> vendors;
 
-    // Create a list of vendors to start with.
+    // Creating data manually for demonstration purposes.
     public VendorRepository() {
         vendors = new ArrayList<>();
         vendors.add(new Vendor("Whole Goods", "Food"));
